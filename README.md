@@ -11,4 +11,7 @@
  不定期更新
  
  ## zjjPython_01
- 操作数据库:https://github.com/jidn1/zjjPython/zjjPython_01
+ 操作数据库:https://github.com/jidn1/zjjPython/tree/master/zjjPython_01
+ 
+ ## zjjPython_02
+ 性感爬虫在线爬取美女图片，男人的福利:https://github.com/jidn1/zjjPython/tree/master/zjjPython_02
