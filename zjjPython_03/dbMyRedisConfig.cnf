@@ -1,5 +1,5 @@
 [dbRedis]
-host = 74.82.208.80
+host =127.0.0.1
 port = 6379
-password=Credit2016Admin
+password=
 db_name=0
