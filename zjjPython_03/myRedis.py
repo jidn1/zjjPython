@@ -101,25 +101,8 @@ class MyRedisPool(BaseRedisPool):
 
 
 if __name__ == '__main__':
-    #redis = MyRedisPool("dbRedis")
-   # name = redis.hget("config","name")
-   # print(str(name))
-    list_param =[]
+    redis = MyRedisPool("dbRedis")
+    name = redis.hget("config","name")
+    print(str(name))
 
-    news_param = {}
-    news_param['newTitle'] = "7018米！中国科学家又迎来历史性突破"
-    news_param['newImg'] = "http://p0.ifengimg.com/pmop/2018/0604/A86C60F870F57DC844F85DB58AD1A643561A4B6BA_size36_w640_h431.jpeg"
-    news_param['newHref'] = "http://news.ifeng.com/a/20180604/58565046_0.shtml"
-    news_param['newType'] = "资讯排行"
 
-    news_param1 = {}
-    news_param1['newTitle'] = "7018米！中国科学家又迎来历史性突破"
-    news_param1['newImg'] = "http://p0.ifengimg.com/pmop/2018/0604/A86C60F870F57DC844F85DB58AD1A643561A4B6BA_size36_w640_h431.jpeg"
-    news_param1['newHref'] = "http://news.ifeng.com/a/20180604/58565046_0.shtml"
-    news_param1['newType'] = "资讯排行"
-
-    list_param.append(news_param)
-    list_param.append(news_param1)
-   # print(news_param["newType"])
-    json_str = json.dumps(list_param,ensure_ascii=False)
-    print(json_str)
