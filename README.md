@@ -30,3 +30,6 @@
  
  ## zjjPython_03
 操作redis：https://github.com/jidn1/zjjPython/tree/master/zjjPython_03
+
+## zjjPython_04
+爬取凤凰网新闻存入mysql：https://github.com/jidn1/zjjPython/tree/master/zjjPython_04
