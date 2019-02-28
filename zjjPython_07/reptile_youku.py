@@ -15,7 +15,7 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 #获取mysql
 mysql = MyPymysqlPool("dbMysql")
 # 爬取地址
-new_url = 'https://wangzhijiami.51240.com/'
+new_url = 'https://v.youku.com/v_show/id_XNDA0MjYzNzgyMA==.html'
 
 
 
