@@ -36,3 +36,9 @@
 
 ## zjjPython_05
 Python 编写一个打飞机 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_05
+
+## zjjPython_06
+Python 解析视频连接并且下载使用Potplay播放 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_06
+
+## zjjPython_07
+Python 爬取优酷VIP视频 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_07
