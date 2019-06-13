@@ -1,3 +1,6 @@
+#! zjjtv python
+# -*- coding: utf-8 -*-
+
 import requests,js2py
 import os,re,time,random
 
