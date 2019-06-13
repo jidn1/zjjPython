@@ -1,5 +1,8 @@
 #! zjjtv python
 # -*- coding: utf-8 -*-
+# cookie 配置用户名密码
+
+
 import requests
 import os,re,time,random,threading
 
@@ -10,6 +13,8 @@ def Handler(start, end, url, filename):
             fp.seek(start)
             var = fp.tell()
             fp.write(r.content)
+
+
 def download(url,tittle, num_thread = 10):
     r = requests.head(url)
     try:
@@ -47,6 +52,8 @@ def random_ip():
     c=random.randint(1,255)
     d=random.randint(1,255)
     return(str(a)+'.'+str(b)+'.'+str(c)+'.'+str(d))
+
+
 def get_cookie():
     with open('cookie.txt','r') as f:
         cookies={}
@@ -54,6 +61,8 @@ def get_cookie():
             name,value=line.strip().split('=',1)  #1代表只分割一次
             cookies[name]=value
         return cookies
+
+
 flag=1
 while flag<=100:
     tittle=[]

@@ -1,5 +1,8 @@
 #! zjjtv python
 # -*- coding: utf-8 -*-
+# 目前只能爬去静态HTML分享的视频
+
+
 import requests
 import os, re, time, random
 
