@@ -42,3 +42,9 @@ Python 解析视频连接并且下载使用Potplay播放 ：https://github.com/j
 
 ## zjjPython_07
 Python 爬取优酷VIP视频 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_07
+
+## zjjPython_08
+Python 在线合成语音功能 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_08
+
+## zjjPython_09
+Python 爬取某网站视频 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_09
