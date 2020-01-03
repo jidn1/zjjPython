@@ -48,12 +48,16 @@ while flag <= 100:
                    'X-Forwarded-For': random_ip(), 'referer': page_url,
                    'Content-Type': 'multipart/form-data; session_language=cn_CN'}
         video_url = []
+        url=base_url + key;
+
         base_req = requests.get(url=base_url + key, headers=headers)
         ifm = re.findall('<iframe width="560" height="315" src="(.*?)" frameborder="0" allowfullscreen></iframe>',
                          base_req.text)
+
         bases_req = requests.get(ifm[0], headers=headers)
         video_url = re.findall(r'<source src="(.*?)" type=\'video/mp4\'>',
                                str(bases_req.content, 'utf-8', errors='ignore'))
+
         tittle = re.findall(r'<div id="viewvideo-title">(.*?)</div>', str(base_req.content, 'utf-8', errors='ignore'),
                             re.S)
         try:
