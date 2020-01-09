@@ -1,5 +1,0 @@
-[dbRedis]
-host = 39.96.203.150
-port = 6379
-password=Credit2019Admin
-db_name=0
