@@ -48,3 +48,15 @@ Python 在线合成语音功能 ：https://github.com/jidn1/zjjPython/tree/maste
 
 ## zjjPython_09
 Python 爬取某网站视频 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_09
+
+## zjjPython_12
+Python Websocket ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_12
+
+## zjjPython_13
+Python 订阅交易所行情，并发送邮件提醒 ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_13
+
+## zjjPython_14
+Python flask ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_14
+
+## zjjPython_15
+Python Telegram Bot ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_15
