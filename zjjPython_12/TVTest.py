@@ -9,13 +9,13 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'}
 
 # 地址
-klineUrl = 'https://localhost/api/tv/v3/history'
+klineUrl = 'https://capi.bitget.bike/api/tv/v3/history'
 payload = {'symbol': 'cmt_ethusdt', 'resolution': '1', 'from': 0, 'to': 0}
 
-streamingUrl = 'https://localhost/api/tv/v3/streaming'
+streamingUrl = 'https://capi.bitget.bike/api/tv/v3/streaming'
 filterSymbol = 'ETHUSDTPERP'
-getStartTime = "2021-04-28 11:49:00"
-getEndTime = "2021-04-28 11:49:59"
+getStartTime = "2021-04-30 16:12:00"
+getEndTime = "2021-04-30 16:12:59"
 
 
 def tradingViewStreaming():

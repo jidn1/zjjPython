@@ -4,17 +4,18 @@ import json
 import time
 
 
-symbol = 'cmt_ethusdt'
-websocketURL = 'ws://localhost:9999/websocket'
+symbol = 'cmt_btcsusdt'
+websocketURL = 'wss://contractsocket-ucloud.9ibp.com/websocket'
 payload = json.dumps({'action': 'history', 'msgId': 'message1619590179968', 'productCode': symbol, 'size': 50})
 
-getStartTime = "2021-04-28 16:02:00"
-getEndTime = "2021-04-28 16:02:59"
+getStartTime = "2021-04-30 10:50:00"
+getEndTime = "2021-04-30 10:50:59"
 
 
 def websocketReceived():
     ws = create_connection(websocketURL)
     ws.send(payload)
+
     flag = True
     KlineData = {}
     priceList = []
