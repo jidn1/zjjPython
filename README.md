@@ -60,3 +60,6 @@ Python flask ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_14
 
 ## zjjPython_15
 Python Telegram Bot ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_15
+
+## zjjPython_18
+Python PDF Bot ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_15
