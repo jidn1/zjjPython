@@ -5,9 +5,11 @@ import threading
 import utils.email_util as sendE
 import utils.gzip_util as g
 
-
-setPrice = 53780.21
-wsSend = json.dumps({"sub": "market.btcusdt.detail", "symbol": "btcusdt", "id": "huobiv"})
+# 常量 设置监听的价格 和监听的交易对
+setPrice = 0.000028
+symbol = "shibusdt"
+wsSend = json.dumps({"sub": "market."+symbol+".detail", "symbol": symbol, "id": "huobiv"})
+receivers = 'ji.dening@upex.co'
 
 
 def handleTicker(ws,message):
@@ -17,7 +19,7 @@ def handleTicker(ws,message):
 
     if 'ch' in dataLine:
         price = float(dataLine['tick']['close'])
-        t = threading.Thread(target= match_price, args=(price,), name='match_price');
+        t = threading.Thread(target= match_price, args=(price,ws), name='match_price');
         t.start()
         t.join()
 
@@ -45,10 +47,14 @@ def pong(ws):
     ws.send(pongStr)
 
 
-def match_price(price):
-    print(str(price)+'--'+threading.current_thread().name)
+def match_price(price,ws):
+    print(symbol+'--'+'%.7f' % price)
+    # if price > setPrice:
+    #     # send_email_huobi(price)
+    #     on_close(ws)
+
 
 
 def send_email_huobi(price):
-    content = '您好，您关注的火币平台BTC,已低于您设置的: '+setPrice+'价格，目前最新价格为:'+price+',上次设置已失效，如需再次提醒，请重新设置价格'
-    sendE.sendEmail('比特吉行情提醒','',content)
+    content = '您好，您关注的火币平台'+symbol+',已低于您设置的: '+str(setPrice)+'价格，目前最新价格为:'+str(price)+',上次设置已失效，如需再次提醒，请重新设置价格'
+    sendE.sendEmail('比特吉行情提醒',receivers,content)

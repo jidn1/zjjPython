@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 
 
 # 常量
-mail_host = "smtp.163.com"
+mail_host = ""
 mail_user = ""
 mail_pass = ""
 sender = ''
@@ -25,4 +25,4 @@ def sendEmail(title,receivers,content):
 
 
 if __name__ == '__main__':
-    sendEmail('比特吉行情提醒','','您好，您关注的火币平台BTC,已低于您设置的: 50231.23价格，目前最新价格为: 49872.78,本次提醒已完成，如需再次提醒，请登录比特吉重新设置价格')
+    sendEmail('比特吉行情提醒','','')
