@@ -52,7 +52,7 @@ class baidu_api:
      
     '''
     def write_file(self, words, page):
-        file_name = 'data_'+str(page)+'.txt'
+        file_name = '/Users/jidening/soft/doc/book/data_'+str(page)+'.txt'
         with open(file_name, 'w', encoding="utf-8") as f:
             for word in words:
                 f.write(str(word))
