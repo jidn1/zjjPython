@@ -76,10 +76,10 @@ def getContent(symbols):
 
 def sendEmail(title,receivers,content):
     # 常量
-    mail_host = "smtp.163.com"
-    mail_user = "dening1644@163.com"
-    mail_pass = "FWRTWYWSWPKILHLD"
-    sender = 'dening1644@163.com'
+    mail_host = ""
+    mail_user = ""
+    mail_pass = ""
+    sender = ''
 
     message = MIMEText(content, _subtype='html',_charset='utf-8')
     message['From'] = '比特吉'
