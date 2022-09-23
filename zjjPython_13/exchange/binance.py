@@ -9,7 +9,7 @@ import utils.email_util as sendE
 setPrice = 0.00003451
 symbol = "shibusdt"
 wsSend = json.dumps({"method": "SUBSCRIBE", "params": ['!miniTicker@arr'], "id": 691})
-receivers = 'ji.dening@upex.co'
+receivers = ''
 
 def handleTicker(ws,message):
     dataLine = json.loads(message)

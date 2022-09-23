@@ -62,4 +62,7 @@ Python flask ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_14
 Python Telegram Bot ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_15
 
 ## zjjPython_18
-Python PDF Bot ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_15
+Python PDF ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_18
+
+## zjjPython_20
+Python exchange bot ：https://github.com/jidn1/zjjPython/tree/master/zjjPython_18

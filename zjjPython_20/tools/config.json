@@ -27,100 +27,100 @@
     ],
     "data": {
         "BTCUSDT": {
-            "price": 51098.31,
+            "price": 20626.37,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 11:16:01"
+            "time": "2022-06-20 17:12:48"
         },
         "ETHUSDT": {
-            "price": 4101.35,
+            "price": 1135.77,
             "rise_ratio": 0.01,
             "fall_ratio": 0.005,
-            "time": "2021-12-24 11:25:17"
+            "time": "2022-06-20 17:13:02"
         },
         "BNBUSDT": {
-            "price": 547.6,
+            "price": 211.9,
             "rise_ratio": 0.005,
             "fall_ratio": 0.005,
-            "time": "2021-12-24 16:39:53"
+            "time": "2022-06-20 17:13:16"
         },
         "DOGEUSDT": {
-            "price": 0.1832,
+            "price": 0.05975,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 18:26:48"
+            "time": "2022-06-20 17:13:31"
         },
         "LINKUSDT": {
-            "price": 22.24,
+            "price": 6.61,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 16:40:20"
+            "time": "2022-06-20 17:13:45"
         },
         "RNDRUSDT": {
-            "price": 6.188,
+            "price": 0.465,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 19:07:15"
+            "time": "2022-06-20 17:14:01"
         },
         "SANDUSDT": {
-            "price": 6.1681,
+            "price": 0.8594,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 18:56:03"
+            "time": "2022-06-20 17:14:16"
         },
         "LUNAUSDT": {
-            "price": 100.83,
+            "price": 2.0974,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 19:37:07"
+            "time": "2022-06-20 17:14:30"
         },
         "XRPUSDT": {
-            "price": 0.979,
+            "price": 0.3232,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 16:40:52"
+            "time": "2022-06-20 17:14:44"
         },
         "JASMYUSDT": {
-            "price": 0.088,
+            "price": 0.009747,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 19:49:59"
+            "time": "2022-06-20 17:14:59"
         },
         "GALAUSDT": {
-            "price": 0.50905,
+            "price": 0.05585,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 16:59:40"
+            "time": "2022-06-20 17:15:14"
         },
         "MATICUSDT": {
-            "price": 2.636,
+            "price": 0.383,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 17:46:02"
+            "time": "2022-06-20 17:15:28"
         },
         "DOTUSDT": {
-            "price": 29.55,
+            "price": 7.54,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 19:23:03"
+            "time": "2022-06-20 17:15:43"
         },
         "SOLUSDT": {
-            "price": 190.9,
+            "price": 33.8,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 17:55:17"
+            "time": "2022-06-20 17:15:57"
         },
         "AXSUSDT": {
-            "price": 108.95,
+            "price": 13.86,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 19:23:31"
+            "time": "2022-06-20 17:16:11"
         },
         "MANAUSDT": {
-            "price": 3.7199,
+            "price": 0.827,
             "rise_ratio": 0.01,
             "fall_ratio": 0.01,
-            "time": "2021-12-24 13:56:57"
+            "time": "2022-06-20 17:16:25"
         },
         "ENSUSDT": {
             "price": 48.11,
@@ -170,5 +170,8 @@
             "fall_ratio": 0.01,
             "time": "2021-12-24 19:25:29"
         }
+    },
+    "announcement": {
+        "spot_time": "2021-12-24 19:25:29"
     }
 }

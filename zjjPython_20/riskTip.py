@@ -1,9 +1,8 @@
 
 import time
 import exchange.binanceAPI as binance
-import exchange.calcIndex as calc
-from exchange import telegramBot as tb
-import jsonData as configData
+import tools.calcIndex as calc
+from tools import telegramBot as tb, jsonData as configData
 
 binan = binance.BinanceAPI('','')
 index = calc.CalcIndex()
@@ -49,7 +48,6 @@ class Run_Main():
 
 
 if __name__ == "__main__":
-
     instance = Run_Main()
     instance.loop_run()
 

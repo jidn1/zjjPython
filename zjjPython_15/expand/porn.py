@@ -25,9 +25,11 @@ meizi_headers = [
 # 给请求指定一个请求头来模拟chrome浏览器
 headers = {'User-Agent': random.choice(meizi_headers)}
 
-Url = 'https://www.myuu2rximhhlqmtkttjv0jrzlgt.xyz:59980/'
+Url = 'http://www.my1151.com'
 
 detalUrl = 'https://www.myuu2rximhhlqmtkttjv0jrzlgt.xyz:59980/index.php/vod/play/id/132313/sid/1/nid/1.html'
+
+# ESF4yZ4W+lIEurCS8WAmFdTt56WHgfcVxWO+E1+XRPxtIzR4NMxYcDEfxCBdHlFt0T3Yqt1qTIygA3cET2UetqHv+HWVDDhb9aKIK+QkaRT6TXmYM\/M+rQjmThRWQLVU
 
 def getPorn():
     res = requests.get(Url, headers=headers)
@@ -44,5 +46,5 @@ def detail():
 
 
 if __name__ == '__main__':
-    # getPorn()
-    detail()
+    getPorn()
+    # detail()

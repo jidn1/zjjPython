@@ -10,10 +10,10 @@ import expand.girl as g
 def help(update, context):
     try:
         msg = '欢迎加入*比特古*, 你在此可以为所欲为:' \
-              '\n*/p 交易对*:查看火币当前价格 ' \
+              '\n*/p 交易对*:查看币安当前价格 ' \
               '\n*/doge* : 查看可爱的狗狗' \
-              '\n*/girl* : 查看色图'  \
-              '\n*/porn* : 查看小片片';
+              '\n*/girl* : 查看美女'  \
+
         context.bot.send_message(chat_id=update.message.chat_id, text=msg, parse_mode='markdown')
     except Exception as e:
         print(e)
@@ -57,7 +57,7 @@ def porn(update, context):
 
 
 def startUp():
-    updater = Updater('BOT_TOKEN', use_context=True)
+    updater = Updater('5475066246:AAGN4CHIgI5QfXq2sz-ldT5gUNUx51oDfqk', use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('help', help))
     dp.add_handler(CommandHandler('p', price))
@@ -68,3 +68,5 @@ def startUp():
     updater.idle()
 
 
+if __name__ == '__main__':
+    startUp()

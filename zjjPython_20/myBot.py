@@ -1,18 +1,15 @@
-
-import telegram
 from telegram.ext import Updater, CommandHandler
 from telegram.ext.dispatcher import run_async
 import expand.girl as g
 import expand.doge as d
 import exchange.binanceAPI as binance
-import jsonData as configData
+from tools import jsonData as configData
+from tools.contants import *
 
 config = configData.RunJsonData()
 binan = binance.BinanceAPI('','')
 
 
-bot_token = ''
-group_id = ''
 
 
 @run_async
@@ -91,6 +88,3 @@ def startUp():
     updater.start_polling()
     updater.idle()
 
-
-if __name__ == '__main__':
-    startUp()

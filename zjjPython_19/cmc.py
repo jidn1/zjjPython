@@ -15,12 +15,12 @@ headers = {
 
 # 地址
 # klineUrl = 'https://api.coinmarketcap.com/data-api/v3/exchange/market-pairs/latest'
-cmc_url = 'https://api.coinmarketcap.com/data-api/v3/exchange/market-pairs/latest?slug=bitget&category=spot&start=1&limit=120'
+cmc_url = 'https://api.coinmarketcap.com/data-api/v3/exchange/market-pairs/latest?slug=bitget&category=perpetual&start=1&limit=120'
 payload = {
     # 'slug': 'bitget', 'category': 'spot', 'start': 0, 'limit': 181
 }
 
-spot_url = 'https://capi.bitget.bike/api/spot/v1/public/products'
+spot_url = 'https://capi.bitget.bike/api/mix/v1/market/contracts?productType=umcbl'
 
 spot_symbol = []
 cmc_symbol = []
@@ -32,7 +32,6 @@ def getCMCSymbols():
         session.headers.update(headers)
         response = session.get(cmc_url, params=payload)
         data = json.loads(response.text)
-        print(data)
         for symbolInfo in data['data']['marketPairs']:
             symbol = symbolInfo['marketPair']
             cmc_symbol.append(symbol.replace("/", ""))
@@ -46,8 +45,9 @@ def getBitGetSpotSymbols():
         session.headers.update(headers)
         response = session.get(spot_url)
         data = json.loads(response.text)
+        print(data)
         for symbolInfo in data['data']:
-            spot_symbol.append(symbolInfo['symbolName'])
+            spot_symbol.append(symbolInfo['symbol'].replace("_UMCBL", ""))
     except Exception as e:
         print(e)
 
@@ -55,7 +55,6 @@ def getBitGetSpotSymbols():
 
 def diff(bitgetSymbols,cmcSymbols):
     diffSymbols = list(set(bitgetSymbols).difference(set(cmcSymbols)))
-    print(diffSymbols)
     return diffSymbols
 
 
@@ -115,7 +114,7 @@ if __name__ == '__main__':
     # content = getContent(diffSymbols)
     print(diffSymbols)
     # content = table()
-    # sendEmail('bitget-all-add cryptoasset','ji.dening@upex.co',content)
+    # sendEmail('bitget-all-add cryptoasset','',content)
 
     # symbol= 'BTCUSDT'
     # print(symbol.replace('USDT',''))

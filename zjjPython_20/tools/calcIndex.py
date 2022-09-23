@@ -7,7 +7,6 @@ binan = binance.BinanceAPI('','')
 class CalcIndex:
 
 
-
     def calcMA(self,symbol,interval,point):
         '''
         :param symbol: 交易对

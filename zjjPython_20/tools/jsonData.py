@@ -1,7 +1,7 @@
 import os, json, time
 
-data_path = os.getcwd()+""+"/config.json"
-# data_path = "/Users/jidening/soft/ideaWorkSpace/gitProject/zjjPython/zjjPython_20/config.json"
+#data_path = os.getcwd()+""+"/config.json"
+data_path = "/Users/jidening/soft/ideaWorkSpace/gitProject/zjjPython/zjjPython_20/tools/config.json"
 class RunJsonData:
 
     def _get_json_data(self):
@@ -55,6 +55,10 @@ class RunJsonData:
         newSymbol["time"] = dt
         data_json["data"][symbol] = newSymbol
         self._modify_json_data(data_json)
+
+    def get_tip_time(self,):
+        data_json = self._get_json_data()
+        return data_json['announcement']['spot_time']
 
 
 if __name__ == '__main__':

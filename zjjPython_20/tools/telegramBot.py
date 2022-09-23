@@ -1,9 +1,9 @@
 
 import telegram
 
-bot_token = ''
-group_id = ''
 
+bot_token = '1868057848:AAGde8KxQSrOvEU4jfWOZ99lMnD8jcWu0G0'
+group_id = '-1001367298851'
 
 
 class TelegramBot:
