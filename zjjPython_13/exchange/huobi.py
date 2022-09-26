@@ -9,7 +9,7 @@ import utils.gzip_util as g
 setPrice = 0.000028
 symbol = "shibusdt"
 wsSend = json.dumps({"sub": "market."+symbol+".detail", "symbol": symbol, "id": "huobiv"})
-receivers = 'ji.dening@upex.co'
+receivers = ''
 
 
 def handleTicker(ws,message):
